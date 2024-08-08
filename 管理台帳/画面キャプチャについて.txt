@@ -1,0 +1,17 @@
+【事前準備】
+・Chromeで実施する
+・Window Resizerプラグインをいれる
+・AWESOME SCREENSHOTプラグインをいれる
+
+【キャプチャ】
+・Window Resizerプラグインで1680 x 1050を指定する
+・AWESOME SCREENSHOTプラグインで「キャプチャ」「表示部分」でキャプチャする
+・フォーマットはPNGで保存する
+・保存場所は「image/andescloud_info」配下とする
+
+【四角での囲いが必要な場合】
+・ペイントに貼り付ける
+・対象箇所を四角で囲う
+	線の幅：上から3つ目
+	線の色：赤 (FF0000)
+	塗りつぶしなし

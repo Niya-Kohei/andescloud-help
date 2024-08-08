@@ -1,0 +1,108 @@
+/* 匠PAD モバイル縦用　CSS 2022/03/01 寺坂 */
+
+/*
+@media screen and (max-width:480px) {
+*/
+@media screen and (max-width:1000px) {
+
+ 	/*　画面サイズが1000px以下の場合ここの記述が適用される　*/
+    #spnavi
+    {
+        display: block;
+        padding-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #drop_menu_icon
+    {
+        display: flex;
+        float: left;
+        /*
+        padding-left: 10px;
+        */
+        margin-left: 15px;
+    }
+    .snc_maincontent_area
+    {
+        background-color: #2a99d7;
+    }
+
+    /* スマホ用　ヘルプトピック */
+    .topic[name=h1]
+    {
+       display: none;
+    }
+    #spnavi::after
+    {
+       content: "";
+       display: block;
+       clear: both;
+    }
+    #drop_menu_text
+    {
+       float: left;
+       /*
+       padding-left: 10px;
+       */
+       margin-left: 10px;
+       line-height: 30px;
+       font-weight: bold;
+    }
+    #drop_menu_close
+    {
+       float: right;
+       height: 30px;
+       padding-left: 0px;
+       padding-right: 10px;
+    }
+    .snc_treeview_area
+    {
+        display: none;
+        position: absolute;
+        z-index: 30;
+        float: left;
+        box-shadow: #0000005e 0px 10px 15px 0px;
+        width: calc(100% - 30px);
+        height: auto;
+        max-height: calc(100% - 150px);
+        padding: 0px 10px 20px 10px;
+        margin: 0px 5px 5px 5px;
+        /*
+        background-color: #2a99d7;
+        */
+    }
+    /*
+    div.page_title span
+    {
+        font-size: 15px;
+    }
+    */
+    div.page_title span.page_title_1
+    {
+        font-size: 18px;
+    }
+    .snc_text_area
+    {
+        z-index: 10;
+        float: none;
+        width: auto;
+        height: calc(100% - 51px);
+    }
+    .text_area
+    {
+        font-size: 15px;
+    }
+    .text_area .explanation_area .title_area
+    {
+        font-size: 20px;
+    }
+    /*
+    .text_area ol
+    {
+        padding: 10px 20px 10px 20px;
+    }
+    */
+ 
+}
+
+

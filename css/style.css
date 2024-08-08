@@ -1,0 +1,590 @@
+/* 匠PAD CSS 2022/02/17 寺坂 */
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+    margin: 0;
+    font-family: "Arial", "メイリオ";
+}
+span
+{
+    display: block;
+}
+.snc_main_area
+{
+    height: 100%;
+}
+
+a.link
+{
+    text-decoration: underline;
+    color: #0E9FA3;
+}
+
+a.link:hover
+{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.snc_head_area
+{ 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #1353B7;
+    padding: 4px 16px 0px 16px;
+    z-index: 10;
+    filter: drop-shadow(0px 2px 3px #a0a0a0);
+    /* background-color: #0E9FA3; */
+}
+
+.snc_logo_area
+{ 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 36px;
+    padding-left: 8px;
+}
+
+.snc_logo
+{
+    height: 24px;
+    /* margin-left: 30px; */
+}
+
+.header_logo
+{
+    height: 36px;
+    padding-right: 8px;
+}
+
+:where(.snc_head_area>*){
+    align-items: center;
+    display: inline-flex;
+}
+
+.snc_foot_area
+{ 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #0071B0;
+    background-color: #ffffff;
+}
+
+.snc_companyname_area
+{ 
+    display: flex;
+    float: right;
+    height: 50px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.snc_keyword_search_area
+{ 
+    display: flex;
+    float: right;
+    height: 50px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#searchform
+{
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid #2d4589;
+    display: block;
+    border-radius: 5px;
+    width: 400px;
+    height: 35px;
+    overflow: hidden;
+}
+#searchform input[type="text"]
+{
+    border: none;
+    height: calc(100% - 2px);
+    width: 100%;
+    float: left;
+}
+#searchform input[type="text"]:focus
+{
+    outline: 0;
+}
+#searchform input[type="submit"]
+{
+    cursor: pointer;
+    border: none;
+    background: #ffffff;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 3px;
+    right: 5px;
+    background-image: url(../image/searc.png);
+    background-repeat: no-repeat;
+}
+.snc_maincontent_area
+{ 
+    width: 100%;
+    height: calc(100% - 94px);
+    padding: 44px 0px 50px 0px;
+    background-color: rgba(255, 253, 237, 1);
+}
+.snc_treeview_area
+{ 
+    display: block;
+    float: left;
+    width: 380px;
+    height: calc(100% - 40px);
+    overflow: auto;
+    padding: 20px;
+    /*
+    background-color: #fafafa;
+    */
+    background-color: #ebebeb;
+    color: #333333;
+    filter: drop-shadow(3px 2px 3px #acacac);
+}
+.snc_text_area
+{ 
+    float: left;
+    width: calc(100% - 420px);
+    height: 100%;
+}
+
+
+
+/*目次エリア　デザイン*/
+a
+{
+    color: #333333;
+    text-decoration: none;
+}
+a:active
+{
+    color: #818181;
+    text-decoration: underline;
+}
+span.note > a,
+div.text_area li > a
+{
+    color: #0071b0;
+}
+span.topic[name=h1]
+{ 
+    font-size: 20px;
+    font-weight: bold;
+}
+span.topic[name=h2]
+{ 
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+span.topic[name=h2] > li
+{ 
+    /*
+    padding-left: 0px;
+    */
+    margin-left: 0px;
+}
+
+div.snc_maincontent_area li
+{
+    list-style:none;
+    /*
+    padding-left: 25px; 
+    */
+    margin-left: 25px; 
+}
+ul
+{
+    display: none;
+}
+.explanation_area ul
+{
+    display: block;
+    padding-left: 0px;
+}
+li.submenu
+{
+    /*
+    padding-left: 5px;
+    */
+    cursor: pointer;
+    position: relative;
+}
+li.submenu ul
+{
+    /*
+    padding-left: 15px;
+    */
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+li.selected > a
+{
+    background-color: #c5c5c5; 
+    border-radius: 5px;
+}
+.snc_treeview_area .submenu[name=detail]
+{
+    /*
+    padding-left: 25px;
+    */
+    margin-left: 25px;
+}
+.snc_treeview_area li.submenu i.fa_chevron_down
+{
+    /*
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    margin-top: 3px;
+    display: block;
+    float: left;
+    background-image: url(../image/open.png);
+    background-repeat: no-repeat; 
+    background-size:16px 16px;
+    */
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-image: url(../image/open.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+    left: -20px;
+}
+.snc_treeview_area li.submenu_open > i.fa_chevron_down,
+.snc_treeview_area li.submenu_open > li.submenu_open i.fa_chevron_down
+{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+/*説明エリア　デザイン*/
+.explanation_area
+{
+    padding: 20px 20px 10px 20px;
+}
+.explanation_area[name=subdivision]
+{
+    display: flex;
+}
+.subdivision
+{
+    margin: 5px;
+    border: 1px solid #555555;
+}
+.subdivision ul
+{
+    margin: 0px;
+}
+.explanation_area div.title_area
+{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00476ebf;
+    border-radius: 20px;
+    content: "";
+    display: block;
+    height: 40px;
+    line-height: 42px;
+}
+.explanation_area div.memo_area
+{
+    margin: 10px 40px;
+}
+
+
+
+.explanation_area .memo_area
+{
+    text-indent: -3ex;
+    margin-left: 3ex;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.explanation_area .memo_area span:before
+{
+    content: "■";
+    padding-right: 3ex;
+    background: transparent;
+    display: block;
+    float: left;
+}
+
+
+
+
+
+
+iframe[name=target-text_area]
+{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: #ffffff;
+}
+
+div.page_title_area
+{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+div.page_title
+{
+    width: 100%;
+    /*
+    background-color:#f2fbff;
+    */
+    background-color:#d9ebf3;
+}
+div.page_title span
+{
+    font-weight: bold;
+    padding: 10px 20px 0px 20px;
+    font-size: 14px;
+    color: #00476ebf;
+}
+div.page_title span.page_title_1
+{
+    font-size: 23px;
+    font-weight: 900;
+    padding-top: 4px;
+    padding-left: 25px;
+    color: #00476e;
+}
+div.page_detail
+{
+    width: 100%;
+    /*
+    background-color: #f2fbff;
+    */
+    color: #00476e;
+    background-color:#d9ebf3;
+    position: relative;
+    padding: 0.3em 0;
+}
+div.page_detail:after
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: repeating-linear-gradient( -45deg, #2a99d7, #2a99d7 2px, #fff 2px, #fff 4px );
+    content: "";
+}
+div.page_detail span
+{
+    padding: 0px 30px 10px 30px;
+    overflow-wrap: break-word;
+    font-size: 14px;
+}
+
+.text_area ol
+{
+    counter-reset: list;
+    list-style: none;
+    margin: 0px;
+    /*
+    padding: 10px;
+    */
+    padding: 10px 20px 10px 20px;
+}
+
+.text_area li
+{
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+.text_area ol > li:before
+{
+    content: counter(list);
+    counter-increment: list;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-left: -30px;
+    font-size: 12px;
+    text-align: center;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: #0071b0;
+    color: #fff;
+}
+.text_area ol ol li:before
+{
+    /*
+    background: #00476e;
+    */
+    background: #00526e;
+}
+.text_area ol div.image
+{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+.text_area ol div.image img
+{
+    max-width: 100%;
+    border: 1px solid #888888;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.text_area ol div.image[name=sashie] img,
+.text_area ol div.help_note div.image[name=sashie] img
+{
+    border: 0px;
+}
+
+.subtitle_1
+{
+    text-align: left;
+    color: #ffffff;
+    /*
+    background-color: #00476e;
+    */
+    background-color: #00526e;
+    font-size: 14px;
+    margin: 0px;
+    padding: 4px 4px 4px 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.subtitle_1 span
+{
+    display:block;
+    border-left:8px solid #ffffff;
+    padding-left:10px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.text_area li.subtext span.subtext_bold
+{
+    font-size: 18px;
+    font-weight: bold;
+    /*
+    color:#00476e;
+    */
+    color:#00526e;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.text_area span.text_bold,
+.text_area div.help_note span.help_text_bold
+{
+    font-weight: bold;
+    display: contents;
+    /*
+    float: left;
+    */
+}
+.text_area div.help_note
+{
+    border-radius: 5px;
+    padding: 10px 15px 5px 15px;
+    margin: 0px 30px 10px 30px;
+    /*
+    margin-left: 30px;
+    margin-bottom: 10px;
+    max-width: 680px;
+    */
+}
+.text_area div.help_note[name=tips]
+{
+    border: 2px solid #35b7ff;
+    background-color: #f7fcff;
+}
+.text_area div.help_note[name=alert]
+{
+    border: 2px solid #ff3939;
+    background-color: #fff7f7;
+}
+
+.text_area div.help_note span
+{
+    color: #666666;
+}
+.text_area div.help_note span.text_bold
+{
+    font-weight: bold;
+    float: none;
+    padding-bottom: 5px;
+}
+
+.text_area div.help_note[name=tips] span.text_bold
+{
+    color: #35b7ff;
+}
+.text_area div.help_note[name=alert] span.text_bold
+{
+    color: #ff3939;
+}
+
+.text_area li > img,
+span.note > img
+{
+    vertical-align: middle;
+    padding-right: 3px;
+    padding-left: 3px;
+    image-rendering: -webkit-optimize-contrast;
+}
+.help_note span.note
+{
+    text-indent: -3ex;
+    margin-left: 3ex;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+
+}
+.help_note span.note:before
+{
+	content: "・";
+    padding-right: 3ex;
+    background: transparent;
+    display: block;
+    float: left;
+}
+.help_space{
+    height: 50px;
+    /* margin-bottom: 5px; */
+}
+
+.svg_icon{
+    width: 20px;  /* もしくは 28px */
+    height: 20px; /* もしくは 28px */
+}

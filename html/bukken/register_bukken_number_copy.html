@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+
+    <div class="page_title_area">
+      <div class="page_title">
+        <span class="page_title_1">番号を指定して子物件を一括作成する</span>
+      </div>
+      <div class="page_detail"><span>番号を指定して子物件を一括作成します。</span></div>
+    </div>
+    <div class="text_area">
+      <ol>
+        <li>
+          物件一覧画面で複製したい物件の<span class="text_bold">
+            「<img class="svg_icon" src="../../image/infoCircle.svg">」ボタン
+          </span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/register/list_to_detail.png">
+        </div> 
+        <li>
+          物件情報の詳細画面から右上の<span class="text_bold">
+            「<img class="svg_icon" src="../../image/copy.svg">」ボタン
+          </span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/register/detail_copy.png">
+        </div> 
+        <li>
+          表示されたダイアログの<span class="text_bold">「部屋番号を指定して物件を複製する」チェックボックス</span>をクリックします。
+        </li>
+
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/register/copy_dialog2.png">
+        </div> 
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/register/copy_room_dialog.png">
+        </div> 
+         <div class="help_note" name="tips">
+          <span class="text_bold">ポイント</span>
+          <span class="note">
+            詳細設定を開くことで接頭語、接尾語、指定した番号の除外ができます。
+          </span>
+        </div>
+
+        <li>
+          作成する部屋の範囲の数値、その他作成する内容を入力し、
+          <span class="text_bold">
+            「<img class="svg_icon" src="../../image/arrow-big-right.svg">」ボタン
+          </span> をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/register/copy_room_dialog2.png">
+        </div> 
+        <div class="help_note" name="tips">
+          <span class="text_bold">ポイント</span>
+          <span class="note">
+            <span class="text_bold">
+              「<img class="svg_icon" src="../../image/recycle-bin.svg" style="align-items: center;">」ボタン
+            </span>をクリックすることで、複製候補を削除することができます。
+          </span>
+        </div>
+        <li>
+          <span class="text_bold">「作成」ボタン</span>をクリックし、複製を作成します。<br>
+          複製された物件は複製元の物件の子物件として登録されます。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/register/copy_room_dialog3.png">
+        </div>
+        <li>
+          登録完了後、複製元の物件の関連物件画面に遷移します。
+        </li>
+        <div class="help_note" name="alert">
+          <span class="text_bold">注意</span>
+          <span class="note">
+            複製元の物件に登録されているファイル、フォルダ、写真は複製されません。
+          </span>
+        </div>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/register/bukken_relation.png">
+        </div>
+      </ol>
+    </div>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/mobile-style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+    <script type="text/javascript" src="../../javascript/takumiPadLayoutCtrl.js"></script>
+
+    <script>
+      window.addEventListener("load",function() 
+			{
+        // 読み込み完了後に処理を読み込む
+        takumiPadLayoutCtrl.init();
+			});
+    </script>
+
+  </body>
+</html>
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+
+    <div class="page_title_area">
+      <div class="page_title">
+        <span class="page_title_1">物件区分を編集する</span>
+      </div>
+      <div class="page_detail"><span>物件区分を編集します。</span></div>
+    </div>
+    <div class="text_area">
+      <ol>
+        <div class="help_note" name="tips">
+          <span class="text_bold">ポイント</span>
+          <span class="note">
+            物件作成時に使用する物件区分を登録します。<br />
+          </span>
+          <span class="note">
+            タブ設定、タブ項目設定：物件区分ごとに物件作成時に追加登録できる項目を登録できます。<br />
+          </span>
+          <span class="note">
+            フォルダマスタ設定：物件区分ごとに物件作成後のファイルストレージの雛形を登録できます。<br />
+          </span>
+          <span class="note">
+            写真マスタ設定：物件区分・CAD地域ごとに物件作成後の写真ファイルストレージの雛形を登録できます。<br />
+          </span>    
+        </div>     
+        <li>
+          <span class="text_bold"><a class="link" href="https://andescloud.snc-cloud.jp/">【ANDESクラウド】</a></span>のページにアクセスします。
+        </li>
+        <li>
+          <span class="text_bold">【ANDESクラウド】</span>にログインします。
+          <div class="help_note" name="tips">
+            <span class="text_bold">ポイント</span>
+            <span class="note">
+              ログイン方法は<span class="text_bold">「ログインする」</span>をご参照ください。
+            </span>
+          </div>
+        </li>
+        <li>
+          <span class="text_bold">【ポータル】画面</span>が表示されます。
+        </li>
+        <li>
+          <span class="text_bold">「物件管理」ボタン</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken_manager_1.png">
+        </div> 
+        <div class="subtitle_1"><span>こんなときは？</span></div>
+        <div>
+          <li class="subtext"><span class="subtext_bold">「物件管理」ボタンが表示されていない場合</span>
+            <ol>
+              <div class="help_note" name="tips">
+                <span class="text_bold">ポイント</span>
+                <span class="note">右上の歯車ボタンから、表示メニュー編集画面を表示します</span>
+                <span class="note">物件管理にチェックをいれて、「登録」ボタンをクリックします。</span>
+              </div>
+            </ol>
+          </li>
+        </div>
+
+
+
+        <li>
+          <span class="text_bold">管理者設定</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/access_manager_2.png">
+        </div> 
+        <li>
+          <span class="text_bold">「部署管理」ボタン</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/department_setting_1.png">
+        </div> 
+        <li>
+          <span class="text_bold">【部署設定】画面</span>が開きます。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/department_setting_2.png">
+        </div> 
+        <li>
+          部署を追加したい<span class="text_bold">親の部署</span>をクリックします。
+        </li>     
+        <div class="image">
+          <img src="../../image/andescloud_info/department_setting_3.png">
+        </div> 
+        <li>
+          <span class="text_bold">「部署追加」ボタン</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/department_setting_4.png">
+        </div>
+        <li>
+          <span class="text_bold">「部署コード」</span>と<span class="text_bold">「部署名」</span>を入力します。
+          「部署コード」は被りがない、任意の値を設定できます。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/department_setting_5.png">
+        </div>
+        <li>
+          <span class="text_bold">「登録」ボタン</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/department_setting_6.png">
+        </div>
+        <li>
+          部署が追加されます。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/department_setting_7.png">
+        </div>
+        <div class="help_note" name="tips">
+          <span class="text_bold">ポイント</span>
+          <span class="note">
+            部署を選択して<span class="text_bold">「部署削除」ボタン</span>をクリックすることで、部署を削除できます。 <br />
+            配下の部署も全て削除されます。
+          </span>
+          <span class="note">
+            部署を選択すると、右に部署の情報が表示されます。 <br />
+            書き換えた後、<span class="text_bold">「登録」ボタン</span>をクリックすることで、部署の情報を変更できます。 <br />
+          </span>
+        </div>
+      </ol>
+    </div>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/mobile-style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+    <script type="text/javascript" src="../../javascript/takumiPadLayoutCtrl.js"></script>
+
+    <script>
+      window.addEventListener("load",function() 
+			{
+        // 読み込み完了後に処理を読み込む
+        takumiPadLayoutCtrl.init();
+			});
+    </script>
+
+  </body>
+</html>
+
+
+

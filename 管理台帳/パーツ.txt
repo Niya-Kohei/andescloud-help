@@ -1,0 +1,64 @@
+
+注意
+		<div class="help_note" name="alert">
+          <span class="text_bold">注意</span>
+          <span class="note">
+            <span class="help_text_bold">【ANDESクラウド】</span>へログインするには、
+            <span class="help_text_bold">「メールアドレス」「パスワード」</span>が必要となります。
+            ログインに関する設定はシステム管理者にお問い合わせください。
+          </span>
+          <span class="note">
+            <span class="help_text_bold">【ANDESクラウド】</span>ログイン中に別の端末でログインした場合、
+            元々ログインしていた端末は自動的にログアウトされます。
+          </span>
+        </div>
+      
+ノート
+        <div class="help_note" name="tips">
+          <span class="text_bold">ポイント</span>
+          <span class="note">
+            同じ端末・ブラウザからログインした場合、一定期間ログイン状態が維持されます。<br>
+            ログイン状態が維持されているあいだはログインを省略することができます。
+          </span>
+        </div>
+
+
+こんな時は
+	        <div class="subtitle_1"><span>こんなときは？</span></div>
+        <div >
+          <li class="subtext"><span class="subtext_bold">メールアドレス・パスワードを忘れた場合</span>
+            <ol>
+              <div class="help_note" name="tips">
+                <span class="text_bold">ポイント</span>
+                <span class="note">メールアドレスを忘れた場合、システム管理者にお問い合わせください。</span>
+                <span class="note">
+                  パスワードを忘れた場合、パスワードをリセットして再入力していただく必要があります。
+                  ログイン画面の<span class="help_text_bold">「パスワードを忘れた場合」</span>からパスワードをリセットしてください。
+                </span>
+              </div>
+            </ol>
+          </li>
+        </div>
+
+
+
+
+        <div class="help_space"></div>
+
+ごみ箱ボタン
+        「<img class="svg_icon" src="../../image/recycle-bin.svg" style="align-items: center;">」ボタン
+
+編集ボタン
+        「<img class="svg_icon" src="../../image/pen.svg">」ボタン
+
+
+
+        <!-- ====================================== -->
+        <!-- 　　　　　　　　　編集　　　　　　　　　　 -->
+        <!-- ====================================== -->
+         <!-- ====================================== -->
+        <!-- 　　　　　　　　　並べ替え　　　　　　　　 -->
+        <!-- ====================================== -->
+        <!-- ====================================== -->
+        <!-- 　　　　　　　　　削除　　　　　　　　　　 -->
+        <!-- ====================================== -->

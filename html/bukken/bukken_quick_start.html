@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <!-- <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head> -->
+  <body>
+
+    <div class="page_title_area">
+      <div class="page_title">
+        <span class="page_title_1">クイックスタート</span>
+      </div>
+      <div class="page_detail"><span>物件情報登録のクイックスタートマニュアルです。</span></div>
+    </div>
+    <div class="text_area">
+      <ol>
+        <li>
+          ポータル画面から<span class="text_bold">「物件管理」ボタン</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_manager_1.png">
+        </div> 
+        <!-- <div class="subtitle_1"><span>物件情報を登録する</span></div> -->
+        <li>
+          物件一覧画面で<span class="text_bold">「物件追加」ボタン</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_register_1.png">
+        </div> 
+        <li>
+          登録する内容を入力し、右下の<span class="text_bold">「登録」ボタン</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_register_2.png">
+        </div>
+        <li>
+          登録完了後、物件の詳細画面に遷移します。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_detail_1.png">
+        </div>
+
+        <div class="help_space"></div>
+        <!-- ====================================== -->
+        <!-- 　　　　　　ファイルの追加　　　　　　　　 -->
+        <!-- ====================================== -->
+        <li>
+          <span class="text_bold">「ファイル」タブ</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_detail_2.png">
+        </div>
+
+        <li>
+          <span class="text_bold">「ファイル選択」</span>をクリックしファイルを選択、または、ドラッグ＆ドロップしたのち、アップロードをクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_folder_1.png">
+        </div>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_folder_2.png">
+        </div>
+        <li>
+          ファイルが登録されます。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_folder_3.png">
+        </div>
+
+
+        <div class="help_space"></div>
+        <!-- ====================================== -->
+        <!-- 　　　　　　　写真の追加　　　　　　　　　 -->
+        <!-- ====================================== -->
+        <li>
+          <span class="text_bold">「写真」タブ</span>をクリックします。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_detail_3.png">
+        </div>
+
+        <li>
+          ドラッグ＆ドロップ、またはファイル選択を行い、アップロードをクリックします。
+        </li>
+        <div class="help_note" name="alert">
+          <span class="text_bold">注意</span>
+          <span class="note">
+            <span class="help_text_bold">JPG、JPEG、PNG、GIF、BMP、TIF、TIFF</span>ファイルのみアップロード可能です。
+          </span>
+        </div>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_photo_1.png">
+        </div>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_photo_2.png">
+        </div>
+        <li>
+          写真が登録されます。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_photo_3.png">
+        </div>
+
+        <div class="help_note" name="tips">
+          <span class="text_bold">ポイント</span>
+          <span class="note">
+            フォルダ作成時に枚数を指定することで、設定したフォルダ(工種)ごとの写真の枚数管理ができます。
+          </span>
+        </div>
+
+        <!-- ====================================== -->
+        <!-- 　　　　　　物件情報の検索　　　　　　　　 -->
+        <!-- ====================================== -->
+        <div class="help_space"></div>
+        <li>
+          物件一覧で登録した物件情報を閲覧することができます。<br>
+          また、キーワードに基づいて検索することも可能です。
+        </li>
+        <div class="image">
+          <img src="../../image/andescloud_info/bukken/bukken_search_1.png">
+        </div>
+      </ol>
+    </div>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/mobile-style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+    <script type="text/javascript" src="../../javascript/takumiPadLayoutCtrl.js"></script>
+
+    <script>
+      window.addEventListener("load",function() 
+			{
+        // 読み込み完了後に処理を読み込む
+        takumiPadLayoutCtrl.init();
+			});
+    </script>
+
+  </body>
+</html>
+
+
+ <!-- <div class="subtitle_1"><span>こんなときは？</span></div>
+        <div>
+          <li class="subtext"><span class="subtext_bold">「物件管理」ボタンが表示されていない場合</span>
+            <ol>
+              <div class="help_note" name="tips">
+                <span class="text_bold">ポイント</span>
+                <span class="note">右上の歯車ボタンから、表示メニュー編集画面を表示します</span>
+                <span class="note">物件管理にチェックをいれて、「登録」ボタンをクリックします。</span>
+              </div>
+            </ol>
+          </li>
+        </div> -->
+
+
