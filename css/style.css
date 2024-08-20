@@ -595,3 +595,34 @@ span.note > img
     background-color: #ebebeb;
     color: #333333;
 }
+
+label.topic[name=h2]
+{ 
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+/* ========================================================= */
+/*       アコーディオンメニューCSS　　　　　　　　　　　　　　　  */
+/* ========================================================= */
+.snc_treeitem_area input {
+    display: none;
+  }
+
+  .snc_treeitem_area label {
+      display: block;
+      cursor: pointer;
+      margin-bottom: -1px;
+  }
+
+  .snc_treeitem_area .topic_area {
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 0.6s ease;
+    }
+
+  .snc_treeitem_area input:checked + label + .topic_area {
+      max-height: 1200px; /* 必要に応じて変更する　各トピック内の最大高さ */
+  }
