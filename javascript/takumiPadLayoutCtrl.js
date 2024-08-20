@@ -15,6 +15,13 @@ takumiPadLayoutCtrl = new function()
         setFileName();
     }
 
+    this.childInit = function()
+	{
+        getTitleArea();
+        setClickEvent();
+        setlinkClickEvent();
+    }
+
     //===================================================================
 	//=	ヘルプ画面のタイトルエリアの高さを取得する                          =
 	//===================================================================
@@ -68,11 +75,13 @@ takumiPadLayoutCtrl = new function()
         // モバイル用　ヘルプトピッククリックでトピックメニューエリア表示・非表示処理
         $("#spnavi,#drop_menu_icon,#drop_menu_text,#drop_menu_close").click(function(){
             if($(".snc_treeview_area").is(":hidden")){
-                $(".snc_treeview_area:not(:animated)").slideDown("slow");
+                $(".snc_treeview_area:not(:animated)").slideDown(500);
                 $("#drop_menu_close").show();
+                // $("#drop_menu_icon").hide();
             }else{
-                $(".snc_treeview_area:not(:animated)").slideUp("slow"); 
+                $(".snc_treeview_area:not(:animated)").slideUp(500); 
                 $("#drop_menu_close").hide();
+                // $("#drop_menu_icon").show();
             }
         });
 
@@ -136,6 +145,7 @@ takumiPadLayoutCtrl = new function()
 
             } else {
                 var Link    = $(this).attr("href"); 
+
                 if(Link.indexOf("#") > -1){
                     //#が含まれる場合
                     var headerHight     = $("div.page_title_area").height();

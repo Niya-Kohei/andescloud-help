@@ -242,24 +242,10 @@ li.selected > a
 }
 .snc_treeview_area .submenu[name=detail]
 {
-    /*
-    padding-left: 25px;
-    */
     margin-left: 25px;
 }
 .snc_treeview_area li.submenu i.fa_chevron_down
 {
-    /*
-    width: 16px;
-    height: 16px;
-    margin-right: 3px;
-    margin-top: 3px;
-    display: block;
-    float: left;
-    background-image: url(../image/open.png);
-    background-repeat: no-repeat; 
-    background-size:16px 16px;
-    */
     width: 16px;
     height: 16px;
     display: block;
@@ -277,7 +263,6 @@ li.selected > a
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-
 
 
 /*説明エリア　デザイン*/
@@ -479,7 +464,7 @@ div.page_detail span
     font-size: 14px;
     margin: 0px;
     padding: 4px 4px 4px 5px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .subtitle_1 span
@@ -587,4 +572,26 @@ span.note > img
 .svg_icon{
     width: 20px;  /* もしくは 28px */
     height: 20px; /* もしくは 28px */
+}
+
+.submenu_frame{
+    height: calc(100% - 40px);
+    /* height: calc(100% - 94px); */
+    border:none;
+    width:100%;
+    background-color: #ebebeb;
+}
+.snc_treeview_area li
+{
+    list-style:none;
+    margin-left: 25px; 
+}
+
+.snc_treeitem_area{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 0px; 
+    background-color: #ebebeb;
+    color: #333333;
 }

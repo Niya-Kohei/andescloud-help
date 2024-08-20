@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+
+    <div class="page_title_area">
+      <div class="page_title">
+        <span class="page_title_1">物件情報のファイル操作を行う</span>
+        
+      </div>
+      <div class="page_detail"></div>
+      <!-- <div class="page_detail"><span>物件区分を編集します。</span></div> -->
+    </div>
+    <div class="text_area">
+      <ol>
+        <li>
+          <a class="link" href="photo_register.html" target="target-text_area">写真を登録する</a>
+        </li>
+        <li>
+          <a class="link" href="photo_edit.html" target="target-text_area">写真名を編集する</a>
+        </li>
+        <li>
+            <a class="link" href="photo_download.html" target="target-text_area">写真をダウンロードする</a>
+        </li>        
+        <li>
+          <a class="link" href="photo_delete.html" target="target-text_area">写真を削除する</a>
+        </li>
+        <li>
+            <a class="link" href="folder_register.html" target="target-text_area">フォルダを登録する</a>
+          </li>
+          <li>
+            <a class="link" href="folder_edit.html" target="target-text_area">フォルダ名を編集する</a>
+          </li>    
+          <li>
+            <a class="link" href="folder_download.html" target="target-text_area">フォルダをダウンロードする</a>
+          </li>     
+          <li>
+            <a class="link" href="folder_delete.html" target="target-text_area">フォルダを削除する</a>
+          </li>
+          <li>
+            <a class="link" href="multi.html" target="target-text_area">複数の写真・フォルダの操作を行う</a>
+          </li>
+          <li>
+            <a class="link" href="detail.html" target="target-text_area">写真・フォルダの詳細情報を表示する</a>
+          </li>        
+          <li>
+            <a class="link" href="view_mode.html" target="target-text_area">表示方法を切り替える</a>
+          </li>
+      </ol>
+    </div>
+
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/mobile-style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+    <script type="text/javascript" src="../../../javascript/takumiPadLayoutCtrl.js"></script>
+
+    <script>
+      window.addEventListener("load",function() 
+			{
+        // 読み込み完了後に処理を読み込む
+        takumiPadLayoutCtrl.childInit();
+			});
+    </script>
+
+  </body>
+</html>
+
+
+

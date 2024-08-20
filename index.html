@@ -8,6 +8,10 @@
   </head>
   <body>
     <div class="snc_main_area">
+
+      <!-- ================================================================== 
+        ヘッダーエリア
+      ================================================================== -->
       <div class="snc_head_area">
         <!-- <div class="snc_logo_area">
           <img id="snc_logo" src="image/andescloud_logo.png" alt="ANDESクラウドロゴ" class="snc_logo">
@@ -17,17 +21,20 @@
           <img id="snc_logo" class="snc_logo" src="image/andescloud_logo.png" alt="ANDESクラウドロゴ" />
         </div>
 
-        <div class="snc_keyword_search_area" style="display: none;">
+        <!-- <div class="snc_keyword_search_area" style="display: none;">
           <div class="snc_head_form">
             <form role="search" method="get" id="searchform" action="" data-hs-cf-bound="true">
               <input type="text" value="" name="keyword" class="search-input" placeholder="　キーワードを入力して探す">
               <input type="submit" value="">
             </form>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div id="takumipad_maincontent_1" class="snc_maincontent_area">
+      <div class="snc_maincontent_area">
 
+        <!-- ================================================================== 
+          メニューエリア
+        ================================================================== -->
         <!-- モバイル用メニューボタン -->
         <ul id="spnavi">
           <li id="drop_menu_icon"><img src="image/menu.png" width="30" height="30" alt="ヘルプトピックアイコン"></li>
@@ -36,129 +43,7 @@
         </ul>
         <div class="snc_treeview_area">
           <span class="topic" name="h1">ヘルプトピック</span>
-          <!-- ================================================================== 
-            ANDESクラウドについて
-          ================================================================== -->
-          <!-- <span class="topic" name="h2">
-            <li class="selected">
-              <a href="html/base/about_andescloud.html" target="target-text_area">
-                ANDESクラウドについて
-              </a>
-            </li>
-          </span>
-          <div class="topic_area" name="topic_detail">
-            <li><a href="html/base/login.html" target="target-text_area" id="login_page_anchor">ログインする</a></li>
-            <li><a href="html/base/forgot_password.html" target="target-text_area" id="forgot_page_anchor">パスワードを忘れた場合</a></li>
-            <li class="submenu">初期設定を行う<i class="fa fa_chevron_down"></i>
-              <ul>
-                <li><a href="html/base/edit_company.html" target="target-text_area">自社情報を編集する</a></li>
-                <li><a href="html/base/edit_cad_location.html" target="target-text_area">CAD地域を追加する</a></li>
-                <li><a href="html/base/edit_department.html" target="target-text_area">部署を追加する</a></li>
-                <li><a href="html/base/edit_permission.html" target="target-text_area">ログインユーザーの権限を編集する</a></li>
-                <li><a href="html/base/edit_login_user.html" target="target-text_area">ログインユーザーを追加する</a></li>
-                <li><a href="html/base/edit_employee.html" target="target-text_area">社員を追加する</a></li>
-                <li><a href="html/base/edit_customer.html" target="target-text_area">得意先を追加する</a></li>
-                <li><a href="html/base/edit_customer_employee.html" target="target-text_area">得意先社員を追加する</a></li>                
-              </ul>
-            </li>
-            <li><a href="html/base/confirm_storage.html" target="target-text_area">使用している容量を確認する</a></li>
-          </div> -->
-
-          <!-- ================================================================== 
-            ポータルについて
-          ================================================================== -->
-          <!-- <span class="topic" name="h2">
-            ポータル機能
-          </span>
-          <div class="topic_area" name="topic_detail">
-            <li><a href="html/portal/about_portal.html" target="target-text_area">ポータル機能とは</a></li>
-            <li class="submenu">ポータル画面<i class="fa fa_chevron_down"></i>
-              <ul>
-                <li><a href="html/portal/use_bukken_manage.html" target="target-text_area">物件管理機能を利用する</a></li>
-                <li><a href="html/portal/use_andes_backup.html" target="target-text_area">ANDESバックアップ機能を利用する</a></li>
-                <li><a href="html/portal/use_local_conf_download.html" target="target-text_area">書式ダウンロード機能を利用する</a></li>
-                <li><a href="html/portal/browse_product_page.html" target="target-text_area">アプリの表示・非表示を変更する</a></li>
-              </ul>
-            </li>
-            <li class="submenu">ダウンロード画面<i class="fa fa_chevron_down"></i>
-              <ul>
-                <li><a href="html/portal/download_system.html" target="target-text_area">契約済みシステムをダウンロードする</a></li>
-                <li><a href="html/portal/request_rental.html" target="target-text_area">システムのレンタルを申し込む</a></li>
-                <li><a href="html/portal/download_document.html" target="target-text_area">関連書類をダウンロードする</a></li>
-                <li><a href="html/portal/browse_product_page.html" target="target-text_area">商品ページを閲覧する</a></li>
-              </ul>
-            </li>
-            <li class="submenu">サポートセンター画面<i class="fa fa_chevron_down"></i>
-              <ul>
-                <li><a href="html/portal/request_remote_maintanance.html" target="target-text_area">リモートメンテナンスを依頼する</a></li>
-                <li><a href="html/portal/tel_support.html" target="target-text_area">サポートに電話をする</a></li>
-                <li><a href="html/portal/mail_support.html" target="target-text_area">サポートにメールを送る</a></li>
-                <li><a href="html/portal/fax_support.html" target="target-text_area">サポートにFAXを送る</a></li>
-              </ul>
-            </li>
-            <li class="submenu">契約状況確認画面<i class="fa fa_chevron_down"></i>
-              <ul>
-                <li><a href="html/portal/confirm_contract.html" target="target-text_area">契約状況を確認する</a></li>
-                <li><a href="html/portal/download_xxx.html" target="target-text_area">XXXXをダウンロードする</a></li>
-                <li><a href="html/portal/download_yyy.html" target="target-text_area">YYYYをダウンロードする</a></li>
-                <li><a href="html/portal/request_support.html" target="target-text_area">サポート契約の申請・延長を申し込む</a></li>
-              </ul>
-            </li>
-          </div> -->
-
-          <!-- ================================================================== 
-            物件管理
-          ================================================================== -->
-          <!-- <div id="bukken-container"></div> -->
-          <span class="topic" name="h2">
-            物件管理機能
-          </span>
-          <div class="topic_area" name="topic_bukken">
-            <li><a href="html/bukken/bukken_quick_start.html" target="target-text_area">クイックスタート</a></li>
-            <li >
-                <a href="html/bukken/bukken_preparation.html" target="target-text_area">事前準備を行う</a><i class="fa fa_chevron_down"></i>
-            </li>
-            <li class="submenu">
-              <a href="html/bukken/register_top.html" target="target-text_area">物件情報を登録する</a><i class="fa fa_chevron_down"></i><i class="fa fa_chevron_down"></i>
-              <ul>
-                <li><a href="html/bukken/register_bukken_new.html" target="target-text_area">新規に物件を登録する</a></li>
-                <li><a href="html/bukken/register_bukken_copy.html" target="target-text_area">物件一覧から物件情報を複製する</a></li>
-                <li><a href="html/bukken/register_bukken_copy_detail.html" target="target-text_area">詳細画面から物件情報を複製する</a></li>
-                <li><a href="html/bukken/register_bukken_number_copy.html" target="target-text_area">番号を指定して子物件を一括作成する</a></li>
-              </ul>
-            </li>
-        
-            <li class="submenu">
-              <a href="html/bukken/search_top.html" target="target-text_area">物件情報を検索する</a><i class="fa fa_chevron_down"></i><i class="fa fa_chevron_down"></i>
-              <ul>
-                <li><a href="html/bukken/search_bukken_cross.html" target="target-text_area">横断検索で物件を検索する</a></li>
-                <li><a href="html/bukken/search_bukken_create.html" target="target-text_area">検索条件を作成する</a></li>
-                <li><a href="html/bukken/search_bukken_detail.html" target="target-text_area">詳細な条件を指定して物件を検索する</a></li>
-              </ul>
-            </li>
-            <li class="submenu">
-              <a href="html/bukken/setting_top.html" target="target-text_area">設定を行う</a><i class="fa fa_chevron_down"></i><i class="fa fa_chevron_down"></i>
-              <ul>
-                <li><a href="html/bukken/setting_bukken_class.html" target="target-text_area">物件区分を設定する</a></li>
-                <li><a href="html/bukken/setting_bukken_tab.html" target="target-text_area">物件区分タブを設定する</a></li>
-                <li><a href="html/bukken/setting_bukken_tabitem.html" target="target-text_area">物件区分タブ項目を設定する</a></li>
-                <li><a href="html/bukken/setting_bukken_folder.html" target="target-text_area">物件区分フォルダを設定する</a></li>
-                <li><a href="html/bukken/setting_bukken_photofolder.html" target="target-text_area">物件区分写真フォルダを設定する</a></li>
-                <li><a href="html/bukken/setting_bukken_location.html" target="target-text_area">CAD地域を設定する</a></li>
-                
-              </ul>
-            </li>
-          </div>
-
-          <!-- ================================================================== 
-            ANDESバックアップ
-          ================================================================== -->
-          <div id="andes_backup-container"></div>
-
-          <!-- ================================================================== 
-            書式ダウンロード
-          ================================================================== -->
-
+          <iframe src="html/topic/snc_help_menu.html" id="submenu_frame" class="submenu_frame" scrolling="no"></iframe>
         </div>
 
         <!-- ================================================================== 
@@ -169,6 +54,10 @@
           <iframe id="iframe_screen" name="target-text_area" src="html/bukken/bukken_quick_start.html"></iframe>
         </div>
       </div>
+
+      <!-- ================================================================== 
+        フッターエリア
+      ================================================================== -->
       <div class="snc_foot_area">
         <div class="snc_companyname_area">
           <img id="takumipad_shisutemuzunakashima" src="image/shisutemuzunakashimalogo.png" alt="株式会社システムズナカシマ">
@@ -184,24 +73,48 @@
     -->
     <script type="text/javascript" src="javascript/takumiPadLayoutCtrl.js"></script>
     <script type="text/javascript" src="javascript/takumiPadWindowSize.js"></script>
-    <script type="text/javascript" src="javascript/topic.js"></script>
+
+
+
+    <!-- <script>
+      // URLからパラメーターを読みこむ
+
+      // URLからパラメーターを取得する関数
+      function getParameterByName(name, url = window.location.href) {
+          name = name.replace(/[\[\]]/g, '\\$&');
+          let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      // パラメーター「sysid」の値を取得
+      let sysid = getParameterByName('sysid');
+
+      // iframeのsrc属性を変更
+      let iframe = document.getElementById('submenu_frame');
+      if (sysid === '1') {
+          iframe.src = 'html/topic/snc_help_menu_copy.html';  // System 1のページ
+      }
+      else {
+          iframe.src = 'html/topic/snc_help_menu.html';  // デフォルトページ　SNCのヘルプメニュー
+      }
+    </script> -->
+
 
 		<script type="text/javascript">
-      // window.addEventListener("DOMContentLoaded", function() {
-      //   // サイドバーメニューの要素を読み込む
-      //   topickCtrl.loadTopicHtml();      
-      // });
-
       window.addEventListener("load",function() 
 			{
         // 読み込み完了後に処理を読み込む
         takumiPadLayoutCtrl.init();
+        
 				//=	Windowsｻｲｽﾞ変更時のｲﾍﾞﾝﾄ
 				window.onresize=function()
 				{
 					takumiPadWindowSize.setWindowResize();
 				};
-
+      });
         // -----------------------------------------------------------------------------------------
         // 動的に読み込むページを切り替える
         // -----------------------------------------------------------------------------------------
@@ -210,7 +123,9 @@
         //document.getElementById('iframe_screen').contentWindow.location.replace('html/base/login.html');
 
         // aタグの選択
-			});
+        window.addEventListener('message', function(event) {
+          document.getElementById('iframe_screen').src = event.data;
+      });
     </script>
 
   </body>
